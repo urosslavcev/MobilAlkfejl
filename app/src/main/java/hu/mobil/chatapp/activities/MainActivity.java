@@ -1,8 +1,10 @@
-package hu.mobil.chatapp;
+package hu.mobil.chatapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import hu.mobil.chatapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
