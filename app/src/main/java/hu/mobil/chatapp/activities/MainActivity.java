@@ -38,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setListeners(){
+
         binding.imageSignOut.setOnClickListener(view -> signOut());
+        binding.fabNewChat.setOnClickListener(view ->
+                startActivity(new Intent(getApplicationContext(), UsersActivity.class)));
     }
 
     private void loadUserDetails() {
@@ -62,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 preferenceManager.getString(Constants.KEY_USER_ID)
         );
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
-                .addOnSuccessListener(unused -> showToast("Tokén sikeresen frissítve"))
                 .addOnFailureListener(e -> showToast("Hiba a tokén frissítésnél!"));
     }
 
