@@ -9,4 +9,5 @@ public class Constants {
     public static final String KEY_IS_SIGNED_IN = "bejelentkezve";
     public static final String KEY_USER_ID = "felhasználóId";
     public static final String KEY_IMAGE = "kép";
+    public static final String KEY_FCM_TOKEN = "fcmToken";
 }
