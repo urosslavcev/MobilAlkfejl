@@ -19,7 +19,7 @@ import hu.mobil.chatapp.models.User;
 import hu.mobil.chatapp.utilities.Constants;
 import hu.mobil.chatapp.utilities.PreferenceManager;
 
-public class UsersActivity extends AppCompatActivity implements UserListener {
+public class UsersActivity extends BaseActivity implements UserListener {
 
     private ActivityUsersBinding binding;
     private PreferenceManager preferenceManager;
@@ -37,6 +37,7 @@ public class UsersActivity extends AppCompatActivity implements UserListener {
     private void setListeners(){
         binding.imageBack.setOnClickListener(view -> onBackPressed());
     }
+
     private void showErrorMessage(){
         binding.textErrorMessage.setText(String.format("%s", "Nincs elérhető felhasználó"));
         binding.textErrorMessage.setVisibility(View.VISIBLE);

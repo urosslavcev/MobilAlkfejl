@@ -22,4 +22,5 @@ public class Constants {
     public static final String KEY_SENDER_IMAGE = "feladóKép";
     public static final String KEY_RECEIVER_IMAGE = "vevőKép";
     public static final String KEY_LAST_MESSAGE = "utolsóÜzenet";
+    public static final String KEY_AVAILABILITY = "elérhetőség";
 }

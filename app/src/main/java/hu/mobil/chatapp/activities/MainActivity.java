@@ -31,7 +31,7 @@ import hu.mobil.chatapp.models.User;
 import hu.mobil.chatapp.utilities.Constants;
 import hu.mobil.chatapp.utilities.PreferenceManager;
 
-public class MainActivity extends AppCompatActivity implements ConversionListener {
+public class MainActivity extends BaseActivity implements ConversionListener {
 
     private ActivityMainBinding binding;
     private PreferenceManager preferenceManager;
