@@ -14,14 +14,17 @@ import android.util.Base64;
 import java.util.List;
 
 import hu.mobil.chatapp.databinding.ItemContainerUserBinding;
+import hu.mobil.chatapp.listeners.UserListener;
 import hu.mobil.chatapp.models.User;
 
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHolder>{
 
     private final List<User> users;
+    private final UserListener userListener;
 
-    public UsersAdapter(List<User> users){
+    public UsersAdapter(List<User> users, UserListener userListener){
         this.users = users;
+        this.userListener = userListener;
     }
 
     @NonNull
@@ -59,6 +62,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
             binding.textName.setText(user.name);
             binding.textEmail.setText(user.email);
             binding.imageProfile.setImageBitmap(getUserImage(user.image));
+            binding.getRoot().setOnClickListener(view -> userListener.onUserClicked(user));
         }
     }
 

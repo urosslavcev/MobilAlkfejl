@@ -10,5 +10,6 @@
     <string name="confirm_password">Jelszó megerősítése</string>
     <string name="login">Bejelentkezés</string>
     <string name="select_user">Felhasználó kiválasztás</string>
+    <string name="type_a_message">Írj üzenetet</string>
 
 </resources>
